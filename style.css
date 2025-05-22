@@ -179,6 +179,18 @@ body{
 .h2-text {
     padding: 20px 40px;
     font-family: "Cormorant SC", serif;
+    text-align: center;
+}
+
+.shop-video{
+    margin: 0 auto;
+    width: 600px;
+    border-radius: 30px;
+}
+
+
+.shop-videos{
+    border-radius: 30px;
 }
 
 /* shop кнопки */
@@ -528,4 +540,34 @@ header {
     100% {
         transform: scale(1);
     }
+}
+
+
+/* табличка */
+
+table caption {
+  text-align: left;
+}
+
+table {
+   border-collapse: collapse; 
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #2a2a2a;
+}
+
+
+.table{
+    margin-top: 50px;
+    width: 500px;
+}
+
+
+.flex-block{
+    display: flex;
+    gap: 500px;
+    
 }
