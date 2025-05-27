@@ -3,6 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap');
 
+:root {
+  --bg-btn-buy: rgb(226, 221, 221);
+  --menu-link-hover:rgb(194, 202, 198);
+  --font-paragraph:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  --title-section:Verdana, Geneva, Tahoma, sans-serif;
+  --img-border-radius: 30px;
+  --footer-bg-color: black;
+}
+
 body{
     margin: 0;
 }
@@ -23,7 +32,10 @@ body{
     color: rgb(241, 43, 7);
     font-size: 50px;
     text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px black;
 }
+
 
 .menu {
     display: flex;
@@ -51,31 +63,34 @@ body{
 }
 
 .menu-link:hover {
-    color: rgb(194, 202, 198);
+    color: var(--menu-link-hover);
 }
 
 .main-photo {
-    border-radius: 20px;
+    border-radius: var(--img-border-radius);
     display: block;
     margin: 0 auto;
 }
 
 .text-description {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(--font-paragraph);
     padding: 30px;
+    text-indent: 10px;
+    line-height: 20px;
+    word-spacing: 5px;
 }
 
 .title-section {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--title-section);
     text-align: center;
+    letter-spacing: 5px;
 }
 
-.photo-section {
-    border-radius: 30px;
+ .photo-section {
+    border-radius:var(--img-border-radius);
     display: block;
     margin: 0 auto;
-
-
+    box-shadow: 2px 2px 9px 4px rgb(63, 61, 61);
 }
 
 .answer {
@@ -83,7 +98,7 @@ body{
 }
 
 .question {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Bitter", serif;
 }
 
 .text-footer {
@@ -165,6 +180,7 @@ body{
     border: 1px solid black;
     width: 250px;
     padding: 5px;
+    box-shadow: 1px 1px 5px 1px black;
 
 }
 
@@ -173,7 +189,7 @@ body{
     display: block;
     margin: 0 auto;
     width: 150;
-
+     
 }
 
 .h2-text {
@@ -185,7 +201,7 @@ body{
 .shop-video{
     margin: 0 auto;
     width: 600px;
-    border-radius: 30px;
+    border-radius: var(--img-border-radius);
 }
 
 
@@ -230,7 +246,8 @@ body{
     border: 1px solid black;
     width: 300px;
     padding: 20px;
-    border-radius: 30px;
+    border-radius: var(--img-border-radius);
+    box-shadow: 1px 1px 8px 1px black ;
 }
 
 .category-title {
@@ -261,7 +278,7 @@ body{
 }
 
 .contact-map {
-    border-radius: 30px;
+    border-radius: var(--img-border-radius);
 }
 
 header {
@@ -306,7 +323,7 @@ header {
 
 .btn-buy {
     padding: 5px 8px;
-    background-color: rgb(226, 221, 221);
+    background-color: var(--bg-btn-buy);
     border: none;
     border: 1px solid black;
     border-radius: 10px;
@@ -354,7 +371,7 @@ header {
 /* footer */
 
 .footer {
-    background-color: black;
+    background-color: var(--footer-bg-color);
     padding: 15px;
     color: white;
 }
@@ -397,6 +414,7 @@ header {
 .focus-in-expand-fwd {
     animation: focus-in-expand-fwd 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     text-align: center;
+    text-shadow: 2px 2px 8px black;
 }
 
 
