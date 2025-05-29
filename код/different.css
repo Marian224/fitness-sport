@@ -1,0 +1,86 @@
+body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.header {
+    background-color: #755a5a;
+    color: white;
+    height: 100px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+.fameli {
+    display: flex;
+    border: 5px solid red;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.aside {
+    background-color: beige;
+    width: 10%;
+    height: 200px;
+
+}
+
+
+.main {
+    background-color: antiquewhite;
+    width: 10%;
+    height: 700px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+/* menu */
+
+.menu {}
+
+
+.menu-photo {
+    width: 20px;
+    height: 20px;
+}
+
+.skroll {
+    overflow-x: scroll;
+    overflow-y: auto;
+    display: flex;
+
+    flex-direction: row;
+    margin-bottom: 80px;
+    width: 500px;
+    justify-content: center;
+}
+
+
+
+
+
+
+/* (padding-margin) Однакові відступи по 20px з усіх сторін */
+margin: 20px;
+
+/* Відступ зверху і знизу по 10px, зліва і справа по 20px */
+margin: 10px 20px;
+
+/* Відступ зверху 10px, зліва і справа по 20px, знизу 5px */
+margin: 10px 20px 5px;
+
+/* Відступ зверху 10px, справа 15px, знизу 20px, зліва 25px */
+margin: 10px 15px 20px 25px;
