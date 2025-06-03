@@ -123,9 +123,13 @@ body{
 
 /* сторінка trener */
 
+
 .trener-flex {
     display: flex;
     gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 20px) / 3);
 }
 
 .trener-card {
@@ -159,6 +163,38 @@ body{
 
 .trener-description {
     font-family: "Cormorant SC", serif;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #212121;
+  background-color: #f9f9fd;
+}
+
+
+.pane {
+  display: none;
+  margin-top: 8px;
+
+}
+
+.pane.is-active {
+  display: block;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  display: flex;
+  justify-content:center;
 }
 
 
