@@ -4,15 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 :root {
-  --bg-btn-buy: rgb(226, 221, 221);
-  --menu-link-hover:rgb(194, 202, 198);
-  --font-paragraph:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  --title-section:Verdana, Geneva, Tahoma, sans-serif;
-  --img-border-radius: 30px;
-  --footer-bg-color: black;
+    --bg-btn-buy: rgb(226, 221, 221);
+    --menu-link-hover: rgb(194, 202, 198);
+    --font-paragraph: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --title-section: Verdana, Geneva, Tahoma, sans-serif;
+    --img-border-radius: 30px;
+    --footer-bg-color: black;
 }
 
-body{
+body {
     margin: 0;
 }
 
@@ -86,8 +86,8 @@ body{
     letter-spacing: 5px;
 }
 
- .photo-section {
-    border-radius:var(--img-border-radius);
+.photo-section {
+    border-radius: var(--img-border-radius);
     display: block;
     margin: 0 auto;
     box-shadow: 2px 2px 9px 4px rgb(63, 61, 61);
@@ -169,32 +169,43 @@ body{
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: sans-serif;
-  line-height: 1.5;
-  color: #212121;
-  background-color: #f9f9fd;
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #212121;
+    background-color: #f9f9fd;
 }
 
 
 .pane {
-  display: none;
-  margin-top: 8px;
+    display: none;
+    margin-top: 8px;
 
 }
 
 .pane.is-active {
-  display: block;
+    display: block;
 }
 
 .controls {
-  display: flex;
-  gap: 8px;
-  display: flex;
-  justify-content:center;
+    display: flex;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.trener-table {
+    margin: 0px 100px;
+}
+
+
+.title-table {
+    text-align: center;
+    font-family: "Bitter", serif;
+    border: 2px dashed black;
 }
 
 
@@ -225,7 +236,7 @@ body {
     display: block;
     margin: 0 auto;
     width: 150;
-     
+
 }
 
 .h2-text {
@@ -234,14 +245,14 @@ body {
     text-align: center;
 }
 
-.shop-video{
+.shop-video {
     margin: 0 auto;
     width: 600px;
     border-radius: var(--img-border-radius);
 }
 
 
-.shop-videos{
+.shop-videos {
     border-radius: 30px;
 }
 
@@ -281,9 +292,9 @@ body {
 .category-item {
     border: 1px solid black;
     width: 300px;
-    padding: 20px ;
+    padding: 20px;
     border-radius: var(--img-border-radius);
-    box-shadow: 1px 1px 8px 1px black ;
+    box-shadow: 1px 1px 8px 1px black;
 }
 
 .category-title {
@@ -294,10 +305,10 @@ body {
     font-family: "Cormorant SC", serif;
 }
 
-.category-img{
+.category-img {
     margin: 0 auto;
     display: block;
-    width: 250px; 
+    width: 250px;
     border-radius: 10px;
 }
 
@@ -607,28 +618,28 @@ header {
 /* табличка */
 
 table caption {
-  text-align: left;
+    text-align: left;
 }
 
 table {
-   border-collapse: collapse; 
+    border-collapse: collapse;
 }
 
 table th,
 table td {
-  padding: 10px;
-  border: 1px solid #2a2a2a;
+    padding: 10px;
+    border: 1px solid #2a2a2a;
 }
 
 
-.table{
+.table {
     margin-top: 50px;
     width: 500px;
 }
 
 
-.flex-block{
+.flex-block {
     display: flex;
     gap: 500px;
-    
+
 }
