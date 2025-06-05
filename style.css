@@ -281,7 +281,7 @@ body {
 .category-item {
     border: 1px solid black;
     width: 300px;
-    padding: 20px;
+    padding: 20px ;
     border-radius: var(--img-border-radius);
     box-shadow: 1px 1px 8px 1px black ;
 }
@@ -292,6 +292,13 @@ body {
 
 .category-description {
     font-family: "Cormorant SC", serif;
+}
+
+.category-img{
+    margin: 0 auto;
+    display: block;
+    width: 250px; 
+    border-radius: 10px;
 }
 
 
