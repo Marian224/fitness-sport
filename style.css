@@ -295,6 +295,8 @@ body {
     padding: 20px;
     border-radius: var(--img-border-radius);
     box-shadow: 1px 1px 8px 1px black;
+    display: flex;
+    flex-direction: column;
 }
 
 .category-title {
@@ -310,6 +312,12 @@ body {
     display: block;
     width: 250px;
     border-radius: 10px;
+}
+
+.category-wrapper{
+    display:flex ;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 
