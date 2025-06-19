@@ -1,86 +1,82 @@
+.box::before {
+  content: 'Це текст в ::before';
+  font-size: 40px;
+  color: orange;
+}
+
+.box::after {
+  content: 'Це текст в ::after';
+  font-size: 30px;
+  color: teal;
+}
+
+.box:hover::before {
+  color: green;
+}
+
+
+.box:hover::after {
+  color: tomato;
+}
+
+
+*{
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0px;
-    width: 100%;
-    height: 100%;
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+}
 
+.list {
+  margin: 0;
+  list-style: none;
+}
+
+.list-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.list-link {
+  display: inline-flex;
+  align-items: center;
+  color: currentColor;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+.list-link:hover {
+  color: #2196f3;
+}
+
+.list-link::before,
+.list-link::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+}
+
+/* Adds and hides eyes icon after the link text */
+.list-link::after {
+  display: none;
+  margin-left: 16px;
+  background-image: url("https://klike.net/uploads/posts/2019-09/1568622559_19.jpg")
+}
+
+/* Show arrow icon on hover */
+.list-link:hover::after {
+  display: block;
 }
 
 
-.header {
-    background-color: #755a5a;
-    color: white;
-    height: 100px;
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+.btn-buy:active{
+  box-shadow: inset 10px 10px 10px 5px rgba(red, green, blue, alpha);
+  color: red;
 }
 
-
-.fameli {
-    display: flex;
-    border: 5px solid red;
-    justify-content: center;
-    align-items: flex-end;
+.btn-buy{
+  font-size: 50px;
 }
-
-.aside {
-    background-color: beige;
-    width: 10%;
-    height: 200px;
-
-}
-
-
-.main {
-    background-color: antiquewhite;
-    width: 10%;
-    height: 700px;
-}
-
-.footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-
-}
-
-/* menu */
-
-.menu {}
-
-
-.menu-photo {
-    width: 20px;
-    height: 20px;
-}
-
-.skroll {
-    overflow-x: scroll;
-    overflow-y: auto;
-    display: flex;
-
-    flex-direction: row;
-    margin-bottom: 80px;
-    width: 500px;
-    justify-content: center;
-}
-
-
-
-
-
-
-/* (padding-margin) Однакові відступи по 20px з усіх сторін */
-margin: 20px;
-
-/* Відступ зверху і знизу по 10px, зліва і справа по 20px */
-margin: 10px 20px;
-
-/* Відступ зверху 10px, зліва і справа по 20px, знизу 5px */
-margin: 10px 20px 5px;
-
-/* Відступ зверху 10px, справа 15px, знизу 20px, зліва 25px */
-margin: 10px 15px 20px 25px;
