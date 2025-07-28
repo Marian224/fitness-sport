@@ -53,17 +53,18 @@ main {
     background-color: slategrey;
     border: 2px solid black;
     border-radius: 12px;
-    padding: 24px;
+    padding: 14px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08)
 }
 
 .img-jym {
     flex: 1 1 400px;
-     /* max-width: 500px;  */
+    /* max-width: 500px;  */
     padding: 20px;
 }
 
 .img-jym img {
+    width: 500px;
     /* width: 100%; */
     border-radius: 16px;
     border: 3px solid black;
@@ -77,9 +78,9 @@ main {
 
 
 .container-jym {
-    /* max-width: 500px;
+    /* max-width: 500px; 
     flex: 1 1 400px;
-    padding: 20px; */
+    /* padding: 20px; */
     display: flex;
 }
 
@@ -90,10 +91,12 @@ main {
 
 
 .container {
-    width: 1200px;
+    width: 960px;
     /* border: 1px solid black; */
     margin: 0 auto;
-
+    display: block;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -101,6 +104,7 @@ main {
 
 
 .title {
+    margin: 0 auto;
     color: rgb(241, 43, 7);
     font-size: 50px;
     text-align: center;
@@ -121,7 +125,6 @@ main {
     /* margin-top: 80px; */
     background-color: rgba(0, 0, 0, 0.507);
     justify-content: space-between;
-
 }
 
 .menu-link {
@@ -146,10 +149,11 @@ main {
 
 .text-description {
     font-family: var(--font-paragraph);
-    padding: 30px;
+    padding: 10px;
     text-indent: 10px;
     line-height: 20px;
     word-spacing: 5px;
+    max-height: 300px;
 }
 
 .title-section {
@@ -318,6 +322,30 @@ body {
 }
 
 
+.trener-button{
+    width: 100px;
+    border: 1px solid rgb(70, 69, 69);
+    border-radius: 6px;
+
+}
+
+.fade-in-fwd:hover {
+	animation: fade-in-fwd 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    cursor: pointer;
+}
+
+
+@keyframes fade-in-fwd {
+  0% {
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
 
 
 
@@ -328,13 +356,15 @@ body {
     display: flex;
     list-style: none;
     gap: 30px;
-
-
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 800px;
+    /* border: 1px solid red; */
 }
 
 .shop-item {
     border: 1px solid black;
-    width: 250px;
+    width: 350px;
     padding: 5px;
     box-shadow: 1px 1px 5px 1px black;
 
@@ -363,6 +393,81 @@ body {
 
 .shop-videos {
     border-radius: 30px;
+}
+
+.box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background-image: url("./img/4.webp");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.omega {
+    background-image: url("./img/ostrovit-omega3-vitamin-d3-k2.jpg");
+}
+
+.vitamind3 {
+    background-image: url("./img/d3-5000-1.png");
+}
+
+.MultiVitamin {
+    background-image: url("./img/5.jpg");
+}
+
+.WheyProtein {
+    background-image: url("./img/7.png");
+}
+
+.Massap {
+    background-image: url("./img/nutrigo-lab-mass.png");
+}
+
+.Creatine {
+    background-image: url("./img/prime_kraft_creatine_monohydrate_pure_200-637x637.png");
+}
+
+.Bcaacaps {
+    background-image: url("./img/bcaa-3d-1.webp");
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #8a7088;
+    transform: translatey(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.box:hover .overlay {
+    transform: translatey(0);
+}
+
+.overlay p {
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+}
+
+.overlay code {
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #2a2a2a;
+}
+
+.card {
+    width: 300px;
+    /* border: 1px solid red; */
 }
 
 /* shop кнопки */
@@ -401,12 +506,14 @@ body {
 
 .category-item {
     border: 1px solid black;
-    width:400px;
+    width: 400px;
     padding: 20px;
     border-radius: var(--img-border-radius);
     box-shadow: 1px 1px 8px 1px black;
     display: flex;
     flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
 }
 
 .category-title {
@@ -434,6 +541,8 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
 .thumb {
@@ -444,7 +553,7 @@ body {
     background-color: #fff;
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-        object-fit: cover;
+    object-fit: cover;
 }
 
 
@@ -464,7 +573,7 @@ body {
 
 img {
     display: block;
-    max-width: 100%;
+    /* max-width: 100%; */
     height: auto;
 }
 
@@ -557,7 +666,11 @@ header {
     color: black;
     border: 1px solid black;
     padding: 5px 5px;
-
+    width: 150px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
 }
 
 .contact-img {
@@ -829,4 +942,135 @@ table td {
 
 .icon:hover {
     fill: #4f7b8f;
+}
+
+
+/* перехід */
+
+.box-block {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: tomato;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    /*  Set transition values  */
+    transition-property: background-color, transform;
+    transition-duration: 1000ms;
+    transition-timing-function: linear;
+    transition-delay: 0;
+}
+
+/* On hover, change the values of animated properties */
+.box-block:hover {
+    background-color: teal;
+    transform: rotate(360deg);
+}
+
+.box-block-contact {
+    width: 150px;
+    height: 45px;
+    border-radius: 2px;
+    background-color: rgb(207, 190, 190);
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    /*  Set transition values  */
+    transition-property: background-color, transform;
+    transition-duration: 600ms;
+    transition-timing-function: linear;
+    transition-delay: 0;
+}
+
+/* On hover, change the values of animated properties */
+.box-block-contact:hover {
+    background-color: rgb(3, 165, 157);
+    transform: rotate(360deg);
+}
+
+
+/* spiner loader */
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.75s ease-in-out, visibility 0.75s ease-in-out;
+}
+
+#loader-wrapper.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader {
+    border: 8px solid #cfcfcf;
+    border-top: 8px solid #b33636;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.box-animation {
+  width: 250px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12); */
+}
+
+.box-animation::before {
+  display: inline-block;
+  font-size: 20px;
+}
+
+
+.box-animation:nth-child(1) {
+  /*   transform: rotate(30deg); */
+  background-color: rgba(255, 255, 255, 0);
+
+  animation: animate30 3000ms infinite 1000ms;
+}
+
+.box-animation:nth-child(1)::before {
+  /* content: "rotate(30deg)"; */
+}
+
+@keyframes animate30 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(30deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
