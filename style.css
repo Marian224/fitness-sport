@@ -187,6 +187,22 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 100px;
+    position: relative;
+}
+
+.login-form {
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    align-items: baseline;
+    flex-direction: column;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.login-text {
+    color: #fc0000;
 }
 
 
@@ -322,7 +338,7 @@ body {
 }
 
 
-.trener-button{
+.trener-button {
     width: 100px;
     border: 1px solid rgb(70, 69, 69);
     border-radius: 6px;
@@ -330,20 +346,21 @@ body {
 }
 
 .fade-in-fwd:hover {
-	animation: fade-in-fwd 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-fwd 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     cursor: pointer;
 }
 
 
 @keyframes fade-in-fwd {
-  0% {
-    transform: translateZ(-80px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateZ(0);
-    opacity: 1;
-  }
+    0% {
+        transform: translateZ(-80px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateZ(0);
+        opacity: 1;
+    }
 }
 
 
@@ -622,8 +639,8 @@ header {
 /* кнопки */
 
 .main-btn {
-    padding: 10px 20px;
-    background-color: white;
+    padding: 10px 15px;
+    background-color: rgb(167, 146, 146);
     border: none;
     border: 1px solid black;
     font-size: 15px;
@@ -1032,45 +1049,45 @@ table td {
 
 
 .box-animation {
-  width: 250px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  /* box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    width: 250px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12); */
 }
 
 .box-animation::before {
-  display: inline-block;
-  font-size: 20px;
+    display: inline-block;
+    font-size: 20px;
 }
 
 
 .box-animation:nth-child(1) {
-  /*   transform: rotate(30deg); */
-  background-color: rgba(255, 255, 255, 0);
+    /*   transform: rotate(30deg); */
+    background-color: rgba(255, 255, 255, 0);
 
-  animation: animate30 3000ms infinite 1000ms;
+    animation: animate30 3000ms infinite 1000ms;
 }
 
 .box-animation:nth-child(1)::before {
-  /* content: "rotate(30deg)"; */
+    /* content: "rotate(30deg)"; */
 }
 
 @keyframes animate30 {
-  0% {
-    transform: rotate(0deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
 
-  50% {
-    transform: rotate(30deg);
-  }
+    50% {
+        transform: rotate(30deg);
+    }
 
-  100% {
-    transform: rotate(0deg);
-  }
+    100% {
+        transform: rotate(0deg);
+    }
 }

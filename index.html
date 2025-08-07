@@ -13,6 +13,26 @@
 
 <body class="body">
     <div class="section-header">
+
+        <!-- <h2 class="title-section"> -->
+
+        <!-- </h2> -->
+        <form class="login-form">
+            <div>
+                <label class="login-text" for="username"></label>
+                <input type="text" id="username" name="username" required placeholder="login">
+            </div>
+            <div>
+                <label class="login-text" for="password"></label>
+                <input type="password" id="password" name="password" required placeholder="password">
+            </div>
+            <button class="main-btn rotate-center" type="submit">Увійти<svg class="icon" width="20"
+                height="20">
+                <use href="./svg1/symbol-defs.svg#icon-enter"> </use>
+            </svg></button>
+
+        </form>
+
         <div class="container">
             <header>
 
@@ -72,6 +92,8 @@
                         </a>
                     </li>
                 </ul>
+
+
             </header>
         </div>
     </div>
@@ -220,27 +242,7 @@
 
 
         <div class="container">
-            <section>
 
-                <h2 class="title-section">
-                    Авторизація
-                    <svg class="icon" width="20" height="20">
-                        <use href="./svg1/symbol-defs.svg#icon-enter"> </use>
-                    </svg>
-                </h2>
-
-
-
-                <form>
-                    <label for="username">Логін:</label>
-                    <input type="text" id="username" name="username" required>
-
-                    <label for="password">Пароль:</label>
-                    <input type="password" id="password" name="password" required>
-
-                    <button class="main-btn rotate-center" type="submit">Увійти</button>
-                </form>
-            </section>
         </div>
 
 
